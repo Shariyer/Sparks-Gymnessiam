@@ -3,7 +3,7 @@ import React from 'react';
 
 const Activity = () => {
     return (
-        <div className='single-activity'>
+        <div className='activity-card'>
             <img src="" alt="" />
             <h3>Activity Name:</h3>
             <p>Benefit:</p>

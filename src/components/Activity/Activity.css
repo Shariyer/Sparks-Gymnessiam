@@ -1,3 +1,9 @@
-.single-activity{
-    
+.activity-card{
+    border: 1px solid black;
+}
+
+.activity-card img{
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
 }
