@@ -9,7 +9,8 @@ const Activities = () => {
 
     return (
         <div className='all-activities'>
-            
+            <Activity></Activity>
+            <Operation></Operation>
         </div>
     );
 };
