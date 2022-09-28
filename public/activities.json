@@ -5,7 +5,7 @@
     "description": "Running is a great exercise for the heart. Over time, it helps your heart pump more efficiently. Running keeps the arteries elastic so blood flows smoothly. Cardiovascular exercise also lowers your blood pressure and bad (LDL) cholesterol, but increases good (HDL) cholesterol, thus reducing your risk of heart disease.",
     "age": "20-25",
     "time": 30,
-    "img": "../activities pic/trademil running.jfif"
+    "img": "./activities pic/trademil running.jfif"
   },
   {
     "id": "2",
@@ -13,7 +13,7 @@
     "description": "Weight lifting with dumbbells lowers your risk of heart attack, stroke, and cardiovascular disease. Since strength training builds lean muscle mass, it helps you burn fat. Better sleep. Using dumbbells in the gym can lead to improved shut-eye.",
     "age": "20-25",
     "time": 30,
-    "img": "../activities pic/dumbel.jfif"
+    "img": "./activities pic/dumbel.jfif"
   },
   {
     "id": "3",
@@ -21,7 +21,7 @@
     "description": "Both EZ Curl Bars are designed to reduce stress on the forearm and wrist and provide a more comfortable grip while focusing on different bicep and tricep areas (but they can also be used on other body areas).",
     "age": "20-25",
     "time": 30,
-    "img": "../activities pic/Ez bar curls.jpg"
+    "img": "./activities pic/Ez bar curls.jpg"
   },
   {
     "id": "4",
@@ -29,7 +29,7 @@
     "description": "Traditional crunches tend to focus only on your rectus abdominis—the muscle group responsible for six-pack abs. However, vertical leg crunches work muscles in your upper body and lower body, including the abdominal muscles, glutes, hip flexors, and hamstrings.",
     "age": "20-25",
     "time": 30,
-    "img": "../activities pic/leg crunch.jfif"
+    "img": "./activities pic/leg crunch.jfif"
   },
   {
     "id": "5",
@@ -37,7 +37,7 @@
     "description": "The benefits of pull-ups make them one of the most efficient and effective strengthening exercises to add to your routine to boost your overall fitness and strengthen and sculpt your body.",
     "age": "20-25",
     "time": 30,
-    "img": "../activities pic/pull up.jfif"
+    "img": "./activities pic/pull up.jfif"
   },
   {
     "id": "6",
@@ -45,7 +45,7 @@
     "description": "It is a great functional way to train your back and core As you pull the rope, it just keeps coming, and it requires strength and cardiovascular endurance to keep at it.It works your back and biceps, but if done at the right intensity, it's also a good cardio workout.",
     "age": "20-25",
     "time": 30,
-    "img": "../activities pic/rope Griping.jpg"
+    "img": "./activities pic/rope Griping.jpg"
   }
  
 ]
