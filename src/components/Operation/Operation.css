@@ -9,6 +9,7 @@
     margin-bottom: 15px;
     background-color: darkcyan;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px;
     
 }
 .profile-container img{
@@ -20,12 +21,18 @@
     margin: 0;
     padding: 0;
 }
-.break-container {
+.personal-info{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.break-buttons {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.break-container button{
+.break-buttons{
     font-size: large;
     font-weight: 800;
     color: white;
