@@ -1,5 +1,5 @@
 
-const addToLocalStorage = (id) => {
+const addToLocalStorage = (param) => {
     
     let activitiesCart = {};
 
@@ -10,14 +10,14 @@ const addToLocalStorage = (id) => {
     }
 
     // adding time in
-    // const time = activitiesCart[id];
+    // const time = activitiesCart[param];
     
     if(quantity){
         const newQuantity = quantity + 1;
-        activitiesCart[id] = newQuantity;
+        activitiesCart[param] = newQuantity;
     }
     else{
-        activitiesCart[id] = 1;
+        activitiesCart[param] = 1;
     }
     localStorage.setItem('activities-cart', JSON.stringify(activitiesCart));
 }
