@@ -1,6 +1,7 @@
 .header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: start;
-    padding-left: 20px;
+    padding-left: 25px;
     color: cadetblue;
     border: 2px solid orange;
     background-color: black;

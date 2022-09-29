@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
 import Header from './components/Header/Header';
 import Activities from './components/Activities/Activities';
 
 function App() {
   return (
-    <div>
+    <div className='app'>
       <Header></Header>
      <Activities></Activities> 
     </div>
