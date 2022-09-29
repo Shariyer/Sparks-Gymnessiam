@@ -16,8 +16,8 @@ const Activities = () => {
         
     }, [])
     
-    
-    let [breakTime,setBreakTime]=useState(0)
+    // for break time
+    let [breakTime, setBreakTime] = useState(0)
     
     const btnHandler1 = () => {
         breakTime = 1;
@@ -44,20 +44,28 @@ const Activities = () => {
         setBreakTime(breakTime)
         addToLocalStorage(totalTime, breakTime);
     }
+
     // calculating total time
-    let totalTime =0;
-    const clickHandlerAddToOperation = (activity)=>{
+    // let [newTime, setTime] = useState(0)
+
+    // console.log("newtime:" + newTime);
+    let totalTime = 0;
+    const clickHandlerAddToOperation = (activity) => {
         
         totalTime = totalTime + activity.time;
-        addToLocalStorage(totalTime, breakTime);
         
+        
+        // console.log("inside handerler"+totalTime)
+        addToLocalStorage(totalTime, breakTime);
     }
     // for showing data 
-    
+    // let [storedActivities, setStoredActivities]=useState(0)
     useEffect(() => {
         const storedActivities = getStoredActivities();
+        
+        console.log(storedActivities);
        
-    },[breakTime,totalTime])
+    },[totalTime,breakTime])
     
     return (
         <div className='all-activities'>

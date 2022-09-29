@@ -2,7 +2,7 @@
   {
     "id": "1",
     "name": "Running",
-    "description": "Running is a great exercise for the heart. Over time, it helps your heart pump more efficiently. Running keeps the arteries elastic so blood flows smoothly. Cardiovascular exercise also lowers your blood pressure and bad (LDL) cholesterol, but increases good (HDL) cholesterol, thus reducing your risk of heart disease.",
+    "description": "Running is a great exercise for the heart. Over time, it helps your heart pump more efficiently.Cardiovascular exercise also lowers your blood pressure and bad (LDL) cholesterol, but increases good (HDL) cholesterol, thus reducing your risk of heart disease.",
     "age": "20-25",
     "time": 30,
     "img": "./activities pic/trademil running.jfif"

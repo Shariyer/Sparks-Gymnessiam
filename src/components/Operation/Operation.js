@@ -1,13 +1,18 @@
 import React from 'react'
 import './Operation.css'
-// import { toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
-// toast.configure()
+
+
+
 const Operation = (props) => {
-    console.log(props)
-    const { btnHandler1, btnHandler2, btnHandler3, btnHandler4, btnHandler5, breakTime } = props;
     
-    // const notify = () => toast("Wow so easy!");
+    const { breakTime } = props;
+    const { btnHandler1, btnHandler2, btnHandler3, btnHandler4, btnHandler5} = props;
+    
+    function notification() {
+
+        alert('SUCCESSFULL!Your activity is Completed');
+    }
+         
    
      return (
          <div className='operation-container'>
@@ -47,9 +52,9 @@ const Operation = (props) => {
              </div>
              <div className='exercise-details'>
                  <h2>Exercise Details:</h2>
-                 <h3 className='total-time'>Total Exercise Time:</h3>
+                 <h3 className='total-time'>Total Exercise Time: minutes</h3>
                  <h3 className='break-time'>Break Time: {breakTime} Minutes</h3>
-                 <button  className='activity-completed-btn'>Activity Completed</button>
+                 <button onClick={notification}  className='activity-completed-btn'>Activity Completed</button>
 
              </div>
          </div>
