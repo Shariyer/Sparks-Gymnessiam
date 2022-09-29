@@ -46,13 +46,15 @@ const Activities = () => {
     }
 
     // calculating total time
-    // let [newTime, setTime] = useState(0)
+    let [totalTime, setTime] = useState(0)
 
     // console.log("newtime:" + newTime);
-    let totalTime = 0;
+
+    // let totalTime = 0;
     const clickHandlerAddToOperation = (activity) => {
         
         totalTime = totalTime + activity.time;
+        setTime(totalTime)
         
         
         // console.log("inside handerler"+totalTime)
@@ -88,7 +90,7 @@ const Activities = () => {
                 btnHandler3={btnHandler3}
                 btnHandler4={btnHandler4}
                 btnHandler5={btnHandler5}
-                    
+                tTime={totalTime}    
                 ></Operation>
            </div>
             

@@ -6,6 +6,7 @@ import './Operation.css'
 const Operation = (props) => {
     
     const { breakTime } = props;
+    const { tTime } = props;
     const { btnHandler1, btnHandler2, btnHandler3, btnHandler4, btnHandler5} = props;
     
     function notification() {
@@ -52,7 +53,7 @@ const Operation = (props) => {
              </div>
              <div className='exercise-details'>
                  <h2>Exercise Details:</h2>
-                 <h3 className='total-time'>Total Exercise Time: seconds</h3>
+                 <h3 className='total-time'>Total Exercise Time:{tTime} seconds</h3>
                  <h3 className='break-time'>Break Time: {breakTime} Minutes</h3>
                  <button onClick={notification}  className='activity-completed-btn'>Activity Completed</button>
 
