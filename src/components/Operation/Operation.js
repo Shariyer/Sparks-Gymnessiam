@@ -4,6 +4,7 @@ import './Operation.css'
 // import 'react-toastify/dist/ReactToastify.css';
 // toast.configure()
 const Operation = (props) => {
+    console.log(props)
     const { btnHandler1, btnHandler2, btnHandler3, btnHandler4, btnHandler5, breakTime } = props;
     
     // const notify = () => toast("Wow so easy!");

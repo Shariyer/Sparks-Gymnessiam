@@ -2,6 +2,8 @@ import './Activities.css'
 import React, { useEffect, useState } from 'react';
 import Activity from '../Activity/Activity';
 import Operation from '../Operation/Operation';
+import { addToLocalStorage, getStoredActivities } from '../Utilities/utilities';
+
 
 const Activities = () => {
      
@@ -15,37 +17,48 @@ const Activities = () => {
     }, [])
     
     
+    let [breakTime,setBreakTime]=useState(0)
     
-    const clickHandlerAddToOperation = (activity)=>{
-        let totalTime =0;
-        totalTime  = totalTime + activity.time;
-        console.log(totalTime);
-        return totalTime;
+    const btnHandler1 = () => {
+        breakTime = 1;
+        setBreakTime(breakTime)
+        addToLocalStorage(totalTime, breakTime);
     }
-
-     let [breakTime,setBreakTime]=useState(0)
-
-     const btnHandler1 = () => {
-         breakTime = 1;
-         setBreakTime(breakTime)
-     }
-     const btnHandler2 = () => {
-         breakTime = 2;
-         setBreakTime(breakTime)
-     }
-     const btnHandler3 = () => {
-         breakTime = 3;
-         setBreakTime(breakTime)
-     }
-     const btnHandler4 = () => {
-         breakTime = 4;
-         setBreakTime(breakTime)
-     }
-     const btnHandler5 = () => {
-         breakTime = 5;
-         setBreakTime(breakTime)
-     }
-
+    const btnHandler2 = () => {
+        breakTime = 2;
+        setBreakTime(breakTime)
+        addToLocalStorage(totalTime, breakTime);
+    }
+    const btnHandler3 = () => {
+        breakTime = 3;
+        setBreakTime(breakTime)
+        addToLocalStorage(totalTime, breakTime);
+    }
+    const btnHandler4 = () => {
+        breakTime = 4;
+        setBreakTime(breakTime)
+        addToLocalStorage(totalTime, breakTime);
+    }
+    const btnHandler5 = () => {
+        breakTime = 5;
+        setBreakTime(breakTime)
+        addToLocalStorage(totalTime, breakTime);
+    }
+    // calculating total time
+    let totalTime =0;
+    const clickHandlerAddToOperation = (activity)=>{
+        
+        totalTime = totalTime + activity.time;
+        addToLocalStorage(totalTime, breakTime);
+        
+    }
+    // for showing data 
+    
+    useEffect(() => {
+        const storedActivities = getStoredActivities();
+       
+    },[breakTime,totalTime])
+    
     return (
         <div className='all-activities'>
             <div className='activities'>
@@ -67,6 +80,7 @@ const Activities = () => {
                 btnHandler3={btnHandler3}
                 btnHandler4={btnHandler4}
                 btnHandler5={btnHandler5}
+                    
                 ></Operation>
            </div>
             

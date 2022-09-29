@@ -1,29 +1,36 @@
 
-const addToLocalStorage = (param) => {
-    
+const addToLocalStorage = (totalTime,breakTime) => {
+    // console.log(id, totalTime, breakTime);
     let activitiesCart = {};
 
     //get the activities cart from local storage
-    const storedActivities = localStorage.getItem('activities-cart');
-    if(storedActivities){
-        activitiesCart = JSON.parse(storedActivities);
-    }
+     const storedActivities = localStorage.getItem('activities-cart');
+     if(storedActivities){
+         activitiesCart = JSON.parse(storedActivities);
+     }
 
-    // adding time in
-    // const time = activitiesCart[param];
+    // adding break time,total time in local storage 
     
-    if(quantity){
-        const newQuantity = quantity + 1;
-        activitiesCart[param] = newQuantity;
-    }
-    else{
-        activitiesCart[param] = 1;
-    }
-    localStorage.setItem('activities-cart', JSON.stringify(activitiesCart));
+     activitiesCart["TotalTime"]=totalTime;
+     activitiesCart["BreakTime"]=breakTime;
+   
+     localStorage.setItem('activities-cart', JSON.stringify(activitiesCart));
 }
 
+const getStoredActivities = () => {
+     
+     let activitiesCart = {};
 
+    //get the activities cart from local storage
+     const storedActivities = localStorage.getItem('activities-cart');
+     if(storedActivities){
+         activitiesCart = JSON.parse(storedActivities);
+     }  
+    
+    return activitiesCart;
+}
 
 export {
-    addToLocalStorage    
+    addToLocalStorage,
+    getStoredActivities
 }
